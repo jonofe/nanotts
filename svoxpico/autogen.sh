@@ -29,6 +29,7 @@ aclocal $IPATHS
 # autoheader
 automake --force-missing --add-missing
 autoconf $IPATHS
+libtoolize
 
 rm -rf autom4te.cache
 
