@@ -6,7 +6,7 @@ rm -f aclocal.m4
 
 #created by libtoolize
 rm -rf m4
-#rm -f ltmain.sh
+rm -f ltmain.sh
 
 #created by autoconf
 rm -f configure
@@ -28,8 +28,9 @@ libtoolize --force
 aclocal $IPATHS
 # autoheader
 automake --force-missing --add-missing
+libtoolize --force
+automake --force-missing --add-missing
 autoconf $IPATHS
-libtoolize
 
 rm -rf autom4te.cache
 
