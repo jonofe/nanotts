@@ -6,7 +6,7 @@ rm -f aclocal.m4
 
 #created by libtoolize
 rm -rf m4
-rm -f ltmain.sh
+#rm -f ltmain.sh
 
 #created by autoconf
 rm -f configure
